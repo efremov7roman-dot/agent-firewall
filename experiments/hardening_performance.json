@@ -1,0 +1,21 @@
+{
+  "profile": "phase6-authorized-portfolio-read-v1",
+  "iterations": 5000,
+  "warmup_iterations": 250,
+  "generated_at": "2026-10-02T16:26:38.911101Z",
+  "python_version": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "policy_decision_latency": {
+    "sample_count": 5000,
+    "p50_ms": 0.0052,
+    "p95_ms": 0.0056,
+    "p99_ms": 0.0059
+  },
+  "gateway_end_to_end_latency": {
+    "sample_count": 5000,
+    "p50_ms": 0.0629,
+    "p95_ms": 0.0958,
+    "p99_ms": 0.1359
+  },
+  "gateway_throughput_requests_per_second": 13409.797788295231
+}

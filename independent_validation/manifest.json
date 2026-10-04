@@ -1,0 +1,10 @@
+{
+  "version": "phase8-independent-v1",
+  "frozen_at": "2026-10-03T00:00:00+05:00",
+  "scenario_fingerprint": "0f7cb560001c6a9e6d791a53582900a72d76212300b2104f8d08900c08eb6bca",
+  "adversarial_scenarios": 26,
+  "benign_scenarios": 14,
+  "total_scenarios": 40,
+  "first_full_run_performed": false,
+  "freeze_note": "Scenario definitions were frozen before the first full independent validation run. This manifest field is historical and must not be rewritten after execution."
+}

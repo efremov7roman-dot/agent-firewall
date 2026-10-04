@@ -1,0 +1,13 @@
+{
+  "successful_attacks": [],
+  "severity_counts": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "INFORMATIONAL": 0},
+  "new_root_cause_clusters": [],
+  "semantic_intent": {"authorization_failures": 0, "documented_semantic_limitations": 0, "ambiguous": 0, "not_exercised": "No live-model semantic-intent scenario was included; all proposals were scripted."},
+  "documented_limitations_observed": [],
+  "coverage_limits": [
+    "Single-process local gateway and sandbox only; cross-host coordination was not measured.",
+    "No live-model prompt injection or real financial execution was measured.",
+    "Audit fault injection, crash consistency, and deletion resistance were not measured by this frozen scenario set.",
+    "The trusted host's identity, grant issuance, clock, and approval authority were assumed correct."
+  ]
+}
