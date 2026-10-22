@@ -12,6 +12,7 @@ license = { text = "MIT" }
 authors = [{ name = "Agent Firewall contributors" }]
 dependencies = [
     "pydantic>=2.10,<3",
+    "langgraph>=1.2,<2",
 ]
 
 [project.scripts]

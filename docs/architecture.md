@@ -1,5 +1,23 @@
 # Architecture
 
+## Local LLM orchestration and evaluated boundary
+
+The local `OllamaProvider` uses native `/api/chat` function proposals. A
+`LangGraphFinancialAgent` StateGraph has agent, authorization, execution,
+recovery, and advance nodes. The graph treats model calls and tool outputs as
+untrusted. Its only protected execution path is `ExecutionGateway.execute`,
+which resolves stored resources and enforces current host-supplied context,
+policy, approval, idempotency, audit, and sandbox execution. The graph has no
+side-effecting checkpoint resume; repeat invocations use stable trace/call
+ordinals so the same gateway can replay a result without repeating a mutation.
+
+The provider now validates the parsed loopback hostname and rejects redirects.
+The graph checks deadlines after model responses as well as before calls. A
+blocking model request remains bounded by the provider timeout. The trusted
+Python process can still import the internal sandbox, and gateway idempotency
+is process-local. See [live adversarial validation](live-v2-validation.md) for
+the frozen local-model experiment and those scope limits.
+
 ## System and trust boundary
 
 Agent Firewall is a local modular monolith around tool execution. The LLM, prompts, retrieved content, tool output, and every proposed call are untrusted. The host-provided identity, capability/policy configuration, approval authority, gateway process, and local sandbox are trusted within the evaluated boundary.

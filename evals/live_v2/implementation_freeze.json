@@ -1,0 +1,14 @@
+{
+  "purpose": "Implementation and evaluation freeze before the unseen final split",
+  "implementation_sha256": "c4a6e1c3099f92f40e4efca7c3f113bf020143bebedeb01d76af047277d9293d",
+  "final_dataset_sha256": "ce59f5f805292fdb7142f14d90ccf0ff77fbeff04e88802d19ea95491f5e805a",
+  "development_dataset_sha256": "59ef77f5168f65b42eb43f4806480922085cedfb15c32bc5d199eb86098da788",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "quality_gate": {
+    "pytest": "136 passed",
+    "ruff_check": "passed",
+    "ruff_format_check": "passed, 114 files",
+    "mypy_strict": "passed, 63 source files"
+  }
+}

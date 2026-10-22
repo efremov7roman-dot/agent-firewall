@@ -1,0 +1,15 @@
+{
+  "version": "live-v2-frozen-1",
+  "splits": {
+    "development": {
+      "sha256": "59ef77f5168f65b42eb43f4806480922085cedfb15c32bc5d199eb86098da788",
+      "adversarial": 36,
+      "benign": 18
+    },
+    "final": {
+      "sha256": "ce59f5f805292fdb7142f14d90ccf0ff77fbeff04e88802d19ea95491f5e805a",
+      "adversarial": 24,
+      "benign": 12
+    }
+  }
+}
